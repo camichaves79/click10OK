@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Contact Us">
+  <meta name="description" content="">
+  <title>Click10 Cambiar Contraseña</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/nicepageGestionPerfil.css')}}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/nicepageGestionPerfil.css')}}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/editarPerfil.css')}}" media="screen">
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='/js/jquery-1.9.1.min.js')}}"
+    defer=""></script>
+  <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='/js/nicepage.js' )}}"
+    defer=""></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i">
+
+
+
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="cambiarContraseña">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body">
+  <header class="u-black u-clearfix u-header u-header" id="sec-205b">
+    <div class="u-clearfix u-sheet u-valign-bottom-xs u-sheet-1">
+      <a href="/Templates/pantallaGestionPublicaciones.html" class="u-image u-logo u-image-1" data-image-width="149"
+        data-image-height="148" title=".">
+        <img src="{{ url_for('static', filename='img/LogoSolo_150.png')}}" class="u-logo-image u-logo-image-1">
+      </a>
+      <a href="/Templates/pantallaPerfilUsuario.html" class="u-image u-image-circle u-logo u-image-2" data-image-width="300"
+        data-image-height="300" title=".">
+        <img src={{ foto_man_o_nena }} class="u-logo-image u-logo-image-2">
+      </a>
+      <p class="u-align-right u-text u-text-body-alt-color u-text-1">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1"
+          href="/Templates/pantallaPerfilUsuario.html">@{{user}}</a>
+      </p>
+      <h1 class="u-align-left u-custom-font u-font-roboto-condensed u-text u-text-custom-color-1 u-text-2">
+        <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-1 u-btn-2"
+          href="/Templates/pantallaGestionPublicaciones.html">click10</a>
+      </h1>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL" data-position="Opciones">
+        <div class="menu-collapse">
+          <a class="u-border-2 u-border-white u-button-style u-custom-color-1 u-nav-link u-text-body-color" href="#"
+            style="font-size: calc(1em + 34px); background-image: none; padding: 17px 16px;">
+            <svg>
+              <use xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </symbol>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled">
+            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                href="/Templates/pantalla1GestionPerfil.html">Editar Perfil</a>
+            </li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                href="/Templates/pantalla3GestionPerfil.html">Eliminar cuenta</a>
+            </li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                href="/Templates/pantalla2GestionPerfil.html">Cambiar
+                contraseña</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-custom-menu u-nav-container-collapse">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                    href="/Templates/pantalla1GestionPerfil.html">Editar Perfil</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                    href="/Templates/pantalla3GestionPerfil.html">Eliminar
+                    cuenta</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link"
+                    href="/Templates/pantalla2GestionPerfil.html">Cambiar
+                    contraseña</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-black u-clearfix u-section-1" id="sec-9571">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div
+        class="u-align-center u-container-style u-custom-color-1 u-expanded-width-xs u-group u-radius-5 u-shape-round u-group-1">
+        <div class="u-container-layout u-valign-middle-xl u-valign-middle-xs u-container-layout-1">
+          <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-1" spellcheck="false">CAMBIAR CONTRASEÑA</h1>
+          <div
+            class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+            <form action="https://nicepage.com/editor/Forms/Process" method="POST"
+              class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px" source="email"
+              name="form">
+              <input type="hidden" id="siteId" name="siteId" value="818043" wfd-invisible="true">
+              <input type="hidden" id="pageId" name="pageId" value="818211" wfd-invisible="true">
+              <div class="u-form-group u-form-name u-form-group-1">
+                <label for="name-5a14" class="u-label" wfd-invisible="true">Usuario</label>
+                <input type="text" placeholder="Escribe tu nombre de usuario" id="name-5a14" name="nombre"
+                  class="u-input u-input-rectangle u-white" required="" spellcheck="false">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-1">
+                <label for="name-5a14" class="u-label" wfd-invisible="true">Contraseña actual</label>
+                <input type="password" placeholder="Escribe tu contraseña actual" id="name-5a14" name="password"
+                  class="u-input u-input-rectangle u-white" required="" spellcheck="false">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-2">
+                <label for="name-f12a" class="u-label">Nueva contraseña</label>
+                <input type="password" placeholder="Escribe tu nueva contraseña" id="name-f12a" name="password-1"
+                  class="u-input u-input-rectangle u-white" required="">
+              </div>
+              <div class="u-form-group u-form-name u-form-group-3">
+                <label for="name-e3f7" class="u-label">Confirmar contraseña</label>
+                <input type="password" placeholder="Confirma tu nueva contraseña" id="name-e3f7" name="password-2"
+                  class="u-input u-input-rectangle u-white" required="">
+              </div>
+              <div class="u-align-center u-form-group u-form-submit u-form-group-4">
+                <a href="#"
+                  class="u-border-2 u-border-black u-btn u-btn-round u-btn-submit u-button-style u-hover-black u-none u-radius-3 u-text-black u-text-hover-white u-btn-1">Guardar</a>
+                <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
+              </div>
+              <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has
+                been sent. </div>
+              <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message.
+                Please fix errors then try again. </div>
+              <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>

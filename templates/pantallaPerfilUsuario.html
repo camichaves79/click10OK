@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Click10 @LoremIpsum</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepagePerfil.css') }}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/pantallaPerfilUsuario.css') }}" media="screen">
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "WebSite808525",
+		"logo": "images/LogoSolo_150.png"
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="pantallaPerfilUsuario">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body">
+  <header class="u-black u-clearfix u-header u-header" id="sec-a47a">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="/Templates/pantallaGestionPublicaciones.html" class="u-image u-logo u-image-1" data-image-width="149"
+        data-image-height="148" title="A gestion publicaciones">
+        <img src="{{ url_for('static', filename='img/LogoSolo_150.png') }}" class="u-logo-image u-logo-image-1">
+      </a>
+      <a href="/Templates/cargaDeImagenDeUsuario.html"
+        class="u-align-center u-border-1 u-border-grey-75 u-image u-image-round u-logo u-radius-50 u-image-2"
+        data-image-width="300" data-image-height="300" title="A perfil de usuario" style="border-style:none;">
+        <img src={{ foto_man_o_nena }} class="u-logo-image-2">
+      </a>
+      <a href="/Templates/pantalla1GestionPerfil.html"
+        class="u-border-none u-btn u-button-style u-none u-text-body-color u-btn-1">
+        <br><span class="u-icon u-text-custom-color-1 u-icon-1"><svg class="u-svg-content" viewBox="0 0 174.248 174.248"
+            x="0px" y="0px" style="width: 1em; height: 1em;">
+            <g>
+              <path
+                d="M173.145,73.91c-0.413-2.722-2.29-4.993-4.881-5.912l-13.727-4.881c-0.812-2.3-1.733-4.536-2.754-6.699l6.247-13.146   c1.179-2.479,0.899-5.411-0.729-7.628c-5.265-7.161-11.556-13.452-18.698-18.693c-2.219-1.629-5.141-1.906-7.625-0.724   l-13.138,6.242c-2.163-1.021-4.402-1.94-6.704-2.752l-4.883-13.729c-0.919-2.586-3.184-4.458-5.9-4.876   c-9.65-1.483-16.792-1.483-26.457,0c-2.713,0.418-4.981,2.29-5.9,4.876l-4.883,13.729c-2.302,0.812-4.541,1.731-6.702,2.752   l-13.143-6.242c-2.479-1.181-5.406-0.904-7.623,0.724c-7.142,5.241-13.433,11.532-18.698,18.693   c-1.629,2.217-1.908,5.148-0.729,7.628l6.247,13.146c-1.021,2.159-1.94,4.4-2.754,6.699L5.982,68.003   c-2.589,0.919-4.463,3.189-4.879,5.907c-0.749,4.92-1.099,9.115-1.099,13.219c0,4.098,0.35,8.299,1.099,13.219   c0.413,2.722,2.29,4.993,4.881,5.912l13.727,4.881c0.814,2.304,1.736,4.541,2.754,6.704l-6.247,13.141   c-1.179,2.479-0.899,5.411,0.727,7.623c5.258,7.156,11.549,13.447,18.7,18.698c2.217,1.629,5.144,1.911,7.625,0.724l13.138-6.242   c2.163,1.021,4.402,1.94,6.704,2.752l4.883,13.729c0.919,2.586,3.184,4.458,5.9,4.876c4.828,0.744,9.154,1.104,13.228,1.104   c4.074,0,8.401-0.36,13.228-1.104c2.715-0.418,4.981-2.29,5.9-4.876l4.883-13.729c2.302-0.812,4.541-1.731,6.704-2.752   l13.138,6.242c2.484,1.186,5.411,0.904,7.628-0.724c7.159-5.26,13.45-11.551,18.698-18.698c1.626-2.212,1.906-5.144,0.727-7.623   l-6.247-13.141c1.021-2.163,1.942-4.405,2.754-6.704l13.727-4.881c2.591-0.919,4.468-3.189,4.881-5.912   c0.749-4.92,1.099-9.12,1.099-13.219S173.894,78.829,173.145,73.91z M158.949,93.72l-12.878,4.58   c-2.251,0.797-3.982,2.625-4.66,4.92c-1.15,3.889-2.664,7.569-4.504,10.943c-1.142,2.1-1.213,4.619-0.187,6.777l5.841,12.285   c-2.822,3.389-5.943,6.515-9.337,9.334l-12.283-5.834c-2.161-1.036-4.672-0.953-6.775,0.185c-3.379,1.838-7.061,3.35-10.953,4.502   c-2.29,0.676-4.118,2.406-4.917,4.657l-4.582,12.883c-4.677,0.476-8.503,0.476-13.18,0l-4.582-12.883   c-0.8-2.246-2.628-3.982-4.917-4.657c-3.894-1.152-7.579-2.664-10.953-4.502c-2.103-1.147-4.619-1.22-6.775-0.185l-12.283,5.839   c-3.391-2.825-6.512-5.946-9.337-9.339l5.841-12.285c1.026-2.159,0.955-4.677-0.187-6.777c-1.835-3.364-3.35-7.049-4.504-10.948   c-0.678-2.29-2.411-4.118-4.66-4.915l-12.878-4.58c-0.243-2.343-0.36-4.502-0.36-6.592s0.117-4.244,0.36-6.587l12.881-4.584   c2.248-0.797,3.979-2.625,4.657-4.915c1.152-3.889,2.667-7.574,4.504-10.953c1.142-2.095,1.213-4.619,0.187-6.772l-5.841-12.285   c2.827-3.393,5.948-6.519,9.337-9.339l12.288,5.839c2.151,1.036,4.677,0.953,6.775-0.185c3.372-1.838,7.054-3.35,10.948-4.502   c2.29-0.676,4.118-2.411,4.917-4.657l4.582-12.883c4.633-0.481,8.466-0.481,13.18,0l4.582,12.883   c0.8,2.246,2.628,3.982,4.917,4.657c3.894,1.152,7.579,2.664,10.953,4.502c2.103,1.147,4.614,1.22,6.775,0.185l12.283-5.839   c3.389,2.82,6.51,5.946,9.337,9.339l-5.841,12.285c-1.026,2.154-0.955,4.677,0.187,6.772c1.843,3.389,3.357,7.069,4.504,10.948   c0.678,2.295,2.409,4.123,4.66,4.92l12.878,4.58c0.243,2.343,0.36,4.502,0.36,6.592S159.192,91.377,158.949,93.72z">
+              </path>
+              <path
+                d="M87.124,50.802c-19.062,0-34.571,15.508-34.571,34.571s15.508,34.571,34.571,34.571s34.571-15.508,34.571-34.571   S106.186,50.802,87.124,50.802z M87.124,105.009c-10.827,0-19.636-8.809-19.636-19.636s8.809-19.636,19.636-19.636   s19.636,8.809,19.636,19.636S97.951,105.009,87.124,105.009z">
+              </path>
+            </g>
+          </svg><img></span>.
+      </a>
+      <p class="u-align-center u-text u-text-white u-text-1" spellcheck="false">@{{user}}</p>
+      <a href="/logout"
+        class="u-btn u-btn-round u-button-style u-custom-color-1 u-hover-custom-color-5 u-radius-6 u-btn-2">Salir</a>
+      <a href="/Templates/pantallaMensajes.html"
+        class="u-black u-border-2 u-border-white u-btn u-btn-round u-button-style u-hover-white u-radius-6 u-btn-3">Mensajes</a>
+        <!-- <span
+        class="u-icon u-icon-circle u-text-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice"
+          viewBox="0 0 512 512">
+          <use xlink:href="#svg-fc6e"></use>
+        </svg>
+        <svg class="u-svg-content" viewBox="0 0 512 512" id="svg-fc6e">
+          <g>
+            <g>
+              <g>
+                <path
+                  d="m256,242.4c-63.8,0-115.7-51.9-115.7-115.7 0-63.8 51.9-115.7 115.7-115.7 63.8,0 115.7,51.9 115.7,115.7 0,63.8-51.9,115.7-115.7,115.7zm0-190.6c-41.3,1.42109e-14-74.9,33.6-74.9,74.9 0,41.3 33.6,74.9 74.9,74.9 41.3,0 74.9-33.6 74.9-74.9 0-41.3-33.6-74.9-74.9-74.9z">
+                </path>
+              </g>
+              <g>
+                <path
+                  d="m480.6,501h-449.2c-11.3,0-20.4-9.1-20.4-20.4 0-66.7 26-129.2 73.1-176 30.4-30.2 73.3-47.5 117.6-47.5h108.6c44.4,0 87.2,17.3 117.6,47.5 47.1,46.8 73.1,109.3 73.1,176 0,11.3-9.1,20.4-20.4,20.4zm-427.8-40.8h406.4c-4.6-48-25.6-92.4-60.1-126.6-22.8-22.6-55.2-35.6-88.8-35.6h-108.6c-33.7,0-66,13-88.8,35.6-34.5,34.2-55.5,78.6-60.1,126.6z">
+                </path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </span> -->
+      <!-- <p class="u-text u-text-2" spellcheck="false">30</p> -->
+      <p class="u-align-justify u-text u-text-3" spellcheck="true">{{biografia}}</p>
+    </div>
+  </header>
+  <section class="u-black u-clearfix u-section-1" id="sec-77ca">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-no-transition u-show-text-on-hover u-gallery-1">
+        <div class="u-gallery-inner u-gallery-inner-1">
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g6d2420c3b501920f8797b6f229fb85aec5b65f06572c81769eabc1fd4bea1a550a059fa63e4e50da9258528dcbc6a582acaa6b63dc21a870e7f09ea70df0ffbf_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-1">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/gf44c2196451356730705f6eba45a7d9fd4fb85666b31e93c37ac662eece2391fb73aed09721addf2ebfe5407a3966d079e861e1c9d85fe05f27dc80dd4c14a69_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-2">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="150" data-image-height="99">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g2ee492cd000d53e916569eaafcb0b2dc07f905a1610619b7b37afbae76d646cfa99170c3628592a627e56055ec224f382d44895a043ed33864165345c76baafe_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-3">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g56437b4d443d4c9ebd9d0357be86ded917e7894cfb80f50e1ced403b9703af6089b50f165706a689a31b71de1124d85632707d5f72badc9b5d0c72e8a52f8a60_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-4">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g18bda3fea7f23065afd88cfbad72a8604dab851737e3e765c1a59501b4ab87aac6aa714ccccbeafe64e8d65e17e8a34ab6baaf8645f2d330b07843f74689154a_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-5">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="960">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g63eb99b57e23f1d79c8429db8ab3a5d3b3eff86abb34f63cd24aff0fe876ae8821d448e3bbe92ff8a97fcbb0d016cda1a63b63f1bd4c4848d738da425e0b980e_1280.png') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-6">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g4dd15123a5e5aacab7d5bbefa9e050714b286b64feaa79c25273cb2df35763bc081626406d3e4503237046eab24c14722a993a15c3afa427fac5834396469dc7_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-7">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/gc8e05e43b766e3357a7bb9890408e50d5e98918f4a381ddfe664e56381eafabc64083ce50e193dd536b7b9bf22b5c9378564eb06dd1fbaaa5ce1c0b50af8a33e_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-8">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g7683024ca521118b76a3e2a48706f14b5defa764576db3f6fdd814e5e5ea12f137d4bfe6ad0585872931dd3019dcd5c389ea13eec640bbbf5f750eb15f15dc0b_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-9">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="150" data-image-height="99">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g8be2a474abb9f2e59b1f8ddfe7a712b0a9255d17f92514015f7e671a6150cec0f4c3fa582628fa56d3ca0fc992f28fc6643e27353af4a368007313d5f88fb48b_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-10">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="855">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g51106213615207ce5ba6d5025a5896dbbbf5919bfde2f96bda29922ac15eeb7b807e5305ac9fecbdc9a74320907d19719417cee7eef78a76ea7794961cfbf955_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-11">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="852">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g60c00ad009bde4f697a17bc841402d98b152bcfd0aa366bc84460afe29ef83a32d64284332720265d13ab7300c1bfd02680a6d21fad98dc39762bc8d40ea370f_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-12">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g2f7ecbd6a5221534fb6876fd2048f8b592722d4e3af2513ec0a4bada486aab34baf59bfe92f56314c566824a4873e08bac78895b85af9e326d5a2587481ad3b6_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-13">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="854">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g67c63fbbd75261fd8132998fa59aaf675aee7ef22a34a03cdb84084c8ff9881ffb26d331a1213b0345b9eeaa1725ffc03c4f543346829a40f0cee64f03a74211_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-14">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="851">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g9072ae0b38390893eb0e822936f9b4ade023dd0f541a533ac8274c3bc97d5ae4cff45162573cd3c9e2004db458a6f7cb02cff3d8966e3ac24654ca727db432e9_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-15">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="855">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g2dcc7e84ca930d15510026ce3c33b1aeb16aa7f75884c34e1adf27e2c55b883f6e4c75ef4d3ae687aeea40c8b2eea0942559b5fd7e4a98499529e1ba6020104f_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-16">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g1410997410e24b4c62e50a1f285e7131236c9cf8c982591832087a6bc180a590271ce22ce3dc95c2018095da08d1d2b2a6e1278cdedc926d5984630818b344aa_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-17">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/gafc2c532cdf795659ef5e27917cb8b81331a1a17efca00033a7bac1e95877cbc6ca158fc3c6988acb3aa18afd6d506e694620897d1890cbab3b0628efce0922a_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-18">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="852">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/gd9ffbac2a71ac6669d2569da529825c0b2368c400c63d10128995fd8cf3c6ca58fc3f8eab85e70fd090224ca486dc518bb1140fd446c88bb8161d940038205c3_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-19">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g8ca0bda11a826aab3b9cb81fdf9050fd86931e2061212d6978504380ef66633112815a85c861272035dc07cc9bd7740519fdf1014cc2da66eaac9038659d283d_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-20">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g49534b08a1bc05472e9f412cd718a3f7033f5c231fe7b0ce8530fdf6baefa4faea4bd1cd594d1502477584e87717902d175290d13f6d66b38843178ef919b537_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-21">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g5fb2e31746205449a5fcc3c9a0d2699cbe8e19a87c36825b6f434ca7711e15e7917150740d08b798135b27238826d49066b22628cc2491eaf609b2ccda7d9986_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-22">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="816">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g6405ca28217be58c7a8f1729382920c3382b4e8e4c11b5b86422f4bf86271ed614e2b9a6e1fb746f215a9832aa4c9e41ec6e9318bbd7cedf04ccbde48051fec5_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-23">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g3c5a0bcfc29f9e8575ea461440c221bd9c1cc8152c5aaf8447092fc7dfed0088757bbe68f81e253005ae855602c8e03c024c82e6a52ed2b2778e0744871db3b8_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-24">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="914">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g5aca58309a693fec6fb4891dbd6534a098332e0c6341e620b3a3de8d06f4a6ff4f12ef336889ddc1143a0a210e8ecd9596a58c8083c6a7df8d01d2f75a57227f_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-25">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="150" data-image-height="99">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g9eb86821ad3fad0fc7593ac95b2507dd087283d40427e4ce5a48890461f17e22cc43f7df3cba8a0d8b4ae9d68b7eb86ac63cef7b039ee8a6105ddb439baf098b_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-26">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/g9da3de20f3b8b06a83a202234c55980252c3e18ba158ffae2f19432ec62c0d52e3459be525450e11c4049d9b279d690103853c226c8445418ba152e75bb1a71d_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-27">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/ge020828c3da5203e4a7b4a815c6b35eab7c2f6dbeac6058120a4a3ab755d3c42a741d3b1281b431ceb2e0d5c20499db1625bb87c7f2f149490cf9fa111ca9cf0_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-28">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/ge9f8320bf54104bec96cefe287ae85d1aac2b46558098436a811d6b0c839cdee383d924d1dd67bd869a8c821a6e9b74925965044c0d5a0c8a0a23093f8f2d243_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-29">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+          <div class="u-effect-fade u-gallery-item">
+            <div class="u-back-slide" data-image-width="1280" data-image-height="853">
+              <img class="u-back-image u-expanded"
+                src="{{ url_for('static', filename='img/gc9b62aa310586fba88f825d351e4e518a327cd15ab270b39ad4d3a32471c251d4374cd19ec7839b8344e27e5f37b9c41107213f947e2e2d3f6cbcbf9e90f19af_1280.jpg') }}">
+            </div>
+            <div class="u-over-slide u-shading u-over-slide-30">
+              <h3 class="u-gallery-heading"></h3>
+              <p class="u-gallery-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
